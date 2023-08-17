@@ -38,8 +38,8 @@ function Example2() {
     // window.addEventListener("blur", (e) => {});
 
     return () => {
-      window.addEventListener("focus", null);
-      window.addEventListener("blur", null);
+      window.removeEventListener("focus", null);
+      // window.removeEventListener("blur", null);
     };
   }, []);
 
